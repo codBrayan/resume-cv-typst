@@ -1,7 +1,7 @@
 #import "@preview/basic-resume:0.2.9": *
 
 
-#let name = "Brayan Lima"
+#let name = "BRAYAN DA SILVA DE LIMA"
 #let location = "Passo Fundo, RS"
 #let email = "brayansilvalima.pf@gmail.com"
 #let github = "github.com/codBrayan"
@@ -20,12 +20,27 @@
   accent-color: "#26428b",
   font: "New Computer Modern",
   paper: "us-letter",
-  author-position: left,
-  personal-info-position: left,
+  author-position: center,
+  personal-info-position: center,
 )
 
-== Education
+  #let subtitle(term) = {
+  // Define o espaçamento vertical antes e depois do subtítulo
+  set block(above: 1.5em, below: 1em)
+  
+  grid(
+    columns: (1fr, auto, 1fr), // Linha flexível, Texto automático, Linha flexível
+    align: horizon,            // Alinha verticalmente no centro
+    gutter: 1em,               // Espaço entre as linhas e o texto
+    line(length: 100%, stroke: 0.5pt),
+    text(weight: "bold", term),
+    line(length: 100%, stroke: 0.5pt),
+  )
+}
 
+
+#subtitle[FORMAÇÃO ACADÊMICA]
+#v(0.5em)
 #edu(
   institution: "Atitus Educação",
   location: "Passo Fundo, RS",
@@ -36,8 +51,10 @@
 consistent: true
 )
 - COLOCAR INFORMAÇÕES RELEVANTES SOBRE A FACULDADE AQUI
-== Work Experience
 
+
+#subtitle[EXPERIÊNCIA PROFISSIONAL]
+#v(0.5em)
 #work(
   title: "Técnico em Informática",
   location: "Passo Fundo, RS",
@@ -46,7 +63,7 @@ consistent: true
 )
 
 - Resolução de problemas técnicos em computadores; Atendimento a clientes   fornecendo suporte técnico e esclarecendo dúvidas sobre softwares e hardware. 
-- Até este momento tive experiência em: Gerenciamento de VMs em Proxmox; Monitoramento de Riscos com BitDefender; Implantação de sistemas como: RMM Tactical, GLPI, OCS Inventory para melhoria no gerenciamento; Criação de Scripts em Python para automatizar pequenos processos. 
+- Até este momento tive experiência em: Gerenciamento de VMs em Proxmox; Monitoramento de Riscos com BitDefender; Implantação de sistemas como: RMM Tactical, GLPI,OCS Inventory para melhoria no gerenciamento; Criação de Scripts em Python para automatizar pequenos processos. 
 
 #work(
   title: "Cabo - Setor de Informática",
@@ -58,8 +75,8 @@ consistent: true
 - Experiência com computadores e redes: Windows e Linux; Troca de componentes; Formatação; Instalação de redes de internet; Programas de gerenciamento e monitoramento de usuários (Proxmox VE, PFSense, Zabbix, Grafana, GLPI, HelpDesk) 
 - Suporte técnico a servidores e usuários, realizando diagnóstico e resolução de problemas em computadores, impressoras, entre outros dispositivos e programas.
 
-== Projects
-
+#subtitle[PROJETOS]
+#v(0.5em)
 #project(
   name: "Noite Macabra",
 )
@@ -78,7 +95,8 @@ consistent: true
 //   - Scaled infrastructure using GCP, Digital Ocean with Kubernetes and Docker; deployed custom software on fly.io
 // - Qualified for DEFCON CTF 32 and CSAW CTF 2023, two of the most prestigious cybersecurity competitions globally
 
-== Certifications
+#subtitle[CERIFICADOS]
+#v(0.5em)
 #certificates(
   name: "OSCP",
   issuer: "Offensive Security",
@@ -86,6 +104,7 @@ consistent: true
   date: "Oct 2024",
 )
 
-== Skills
+#subtitle[HABILIDADES]
+#v(0.5em)
 - *Programming Languages*: JavaScript, Python, C/C++, HTML/CSS, Java, Bash, R, Flutter, Dart
 - *Technologies*: React, Astro, Svelte, Tailwind CSS, Git, UNIX, Docker, Caddy, NGINX, Google Cloud Platform
