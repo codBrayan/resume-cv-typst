@@ -17,7 +17,7 @@
   linkedin: linkedin,
   phone: phone,
   // personal-site: personal-site,
-  accent-color: "#26428b",
+  accent-color: "#0e0e41",
   font: "New Computer Modern",
   paper: "us-letter",
   author-position: center,
@@ -25,22 +25,20 @@
 )
 
   #let subtitle(term) = {
-  // Define o espaçamento vertical antes e depois do subtítulo
-  set block(above: 1.5em, below: 1em)
+  set block(above: 2em, below: 1.5em)
   
   grid(
     columns: (1fr, auto, 1fr), // Linha flexível, Texto automático, Linha flexível
     align: horizon,            // Alinha verticalmente no centro
     gutter: 1em,               // Espaço entre as linhas e o texto
     line(length: 100%, stroke: 0.5pt),
-    text(weight: "bold", term),
+    text(weight: "bold",fill: rgb("#0e0e41"),  term),
     line(length: 100%, stroke: 0.5pt),
   )
 }
 
 
 #subtitle[FORMAÇÃO ACADÊMICA]
-#v(0.5em)
 #edu(
   institution: "Atitus Educação",
   location: "Passo Fundo, RS",
@@ -54,16 +52,15 @@ consistent: true
 
 
 #subtitle[EXPERIÊNCIA PROFISSIONAL]
-#v(0.5em)
 #work(
   title: "Técnico em Informática",
   location: "Passo Fundo, RS",
   company: "MLTech Informática",
-  dates: dates-helper(start-date: "Mar 2025", end-date: "Present"),
+  dates: dates-helper(start-date: "Mar 2025", end-date: "Presente"),
 )
 
-- Resolução de problemas técnicos em computadores; Atendimento a clientes   fornecendo suporte técnico e esclarecendo dúvidas sobre softwares e hardware. 
-- Até este momento tive experiência em: Gerenciamento de VMs em Proxmox; Monitoramento de Riscos com BitDefender; Implantação de sistemas como: RMM Tactical, GLPI,OCS Inventory para melhoria no gerenciamento; Criação de Scripts em Python para automatizar pequenos processos. 
+- Diariamente resolvendo problemas técnicos em computadores; Atendimento a clientes fornecendo suporte técnico e esclarecendo dúvidas sobre softwares e hardware. 
+- Até este momento tive experiência em: Gerenciamento de VMs em Proxmox; Monitoramento de Riscos com BitDefender; Implantação de sistemas como: RMM Tactical, GLPI,OCS Inventory para mais desempenho no gerenciamento; Criação de Scripts em Python para automatizar pequenos processos;
 
 #work(
   title: "Cabo - Setor de Informática",
@@ -72,11 +69,10 @@ consistent: true
   dates: dates-helper(start-date: "Fev 2023", end-date: "Fev 2025"),
 )
 
-- Experiência com computadores e redes: Windows e Linux; Troca de componentes; Formatação; Instalação de redes de internet; Programas de gerenciamento e monitoramento de usuários (Proxmox VE, PFSense, Zabbix, Grafana, GLPI, HelpDesk) 
-- Suporte técnico a servidores e usuários, realizando diagnóstico e resolução de problemas em computadores, impressoras, entre outros dispositivos e programas.
+- Experiência com computadores e redes: Windows e Linux; Troca de componentes; Formatação; Instalação de redes de internet; Programas de gerenciamento e monitoramento de usuários (Proxmox VE, PFSense, Zabbix, Grafana, GLPI, HelpDesk); Suporte técnico a servidores e usuários, realizando diagnóstico e resolução de problemas em computadores, impressoras, entre outros dispositivos e programas.
+- Liderança de equipes: Coordenação de equipes em atividades diárias, delegando tarefas e garantindo a eficiência operacional; Disciplina e organização: Manutenção da ordem e disciplina dentro do ambiente militar, seguindo normas e regulamentos estabelecidos;
 
 #subtitle[PROJETOS]
-#v(0.5em)
 #project(
   name: "Noite Macabra",
 )
@@ -96,7 +92,6 @@ consistent: true
 // - Qualified for DEFCON CTF 32 and CSAW CTF 2023, two of the most prestigious cybersecurity competitions globally
 
 #subtitle[CERIFICADOS]
-#v(0.5em)
 #certificates(
   name: "OSCP",
   issuer: "Offensive Security",
@@ -105,6 +100,5 @@ consistent: true
 )
 
 #subtitle[HABILIDADES]
-#v(0.5em)
 - *Programming Languages*: JavaScript, Python, C/C++, HTML/CSS, Java, Bash, R, Flutter, Dart
 - *Technologies*: React, Astro, Svelte, Tailwind CSS, Git, UNIX, Docker, Caddy, NGINX, Google Cloud Platform
