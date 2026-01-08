@@ -1,5 +1,4 @@
-#import "@preview/basic-resume:0.2.9": *
-
+#import "assets/basic-resume.typ": *
 
 #let name = "BRAYAN DA SILVA DE LIMA"
 #let location = "Passo Fundo, RS"
@@ -37,7 +36,6 @@
   )
 }
 
-
 #subtitle[FORMAÇÃO ACADÊMICA]
 #edu(
   institution: "Atitus Educação",
@@ -48,7 +46,7 @@
   // Uncomment the line below if you want edu formatting to be consistent with everything else
 consistent: true
 )
-- COLOCAR INFORMAÇÕES RELEVANTES SOBRE A FACULDADE AQUI
+- Currículo estruturado em nanodegrees, ou seja, ao final de cada semestre, o aluno já estará habilitado com uma competência
 
 
 #subtitle[EXPERIÊNCIA PROFISSIONAL]
@@ -80,6 +78,12 @@ consistent: true
 - Aprendizado de conceitos de desenvolvimento de jogos, programação em C\# design de níveis e mecânicas de jogo.
 - Projeto disponível no GitHub: #link("https://github.com/codBrayan/noite-macabra-unity2d")[noite-macabra-unity2d]
 
+#project(
+  name: "API catalogo de livros",
+)
+- Projeto para faculdade, uma aplicação front-end em JavaScript/React para exibir um catálogo de livros. 
+- Utilizei Axios para fazer requisições a bibioteca, mapping e Hooks, GitHub actions para CI/CD
+- Projeto disponível no GitHub: #link("https://github.com/codBrayan/api-js-catalogolivros")[api-js-catalogolivros]
 
 // == Extracurricular Activities
 // #extracurriculars(
@@ -91,14 +95,23 @@ consistent: true
 //   - Scaled infrastructure using GCP, Digital Ocean with Kubernetes and Docker; deployed custom software on fly.io
 // - Qualified for DEFCON CTF 32 and CSAW CTF 2023, two of the most prestigious cybersecurity competitions globally
 
-#subtitle[CERIFICADOS]
+#subtitle[CERTIFICADOS]
 #certificates(
-  name: "OSCP",
-  issuer: "Offensive Security",
+  name: "Qualificação em Desenvolvimento de Soluções Full Stack",
+  issuer: "Atitus Educação",
   // url: "",
-  date: "Oct 2024",
+  date: "Oct 2025",
+)
+
+#certificates(
+  name: "Full Stack Weekend - SaaS Barbearia",
+  issuer: "Full Stack Club",
+  date: "Nov 2025",
 )
 
 #subtitle[HABILIDADES]
-- *Programming Languages*: JavaScript, Python, C/C++, HTML/CSS, Java, Bash, R, Flutter, Dart
-- *Technologies*: React, Astro, Svelte, Tailwind CSS, Git, UNIX, Docker, Caddy, NGINX, Google Cloud Platform
+Conhecimento em:
+- *Linguagens de Programação*: JavaScript, Python, Java, HTML/CSS, SQL.
+- *Tecnologias*: React, Tailwind CSS, Git, Docker.
+- *Sistemas Operacionais*: Windows, Linux (básico).
+- *Outras Habilidades*: Resolução de problemas, trabalho em equipe, comunicação eficaz.
